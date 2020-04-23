@@ -3,7 +3,7 @@ package com.reactlibrary;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Callback;
+import java.lang.system.out;
 
 public class DocumentControllerModule extends ReactContextBaseJavaModule {
 
@@ -20,8 +20,9 @@ public class DocumentControllerModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void sampleMethod(String stringArgument, int numberArgument, Callback callback) {
+    public void show(String[] args) {
+        println("react-native-document-controller not supported for android");
         // TODO: Implement some actually useful functionality
-        callback.invoke("Received numberArgument: " + numberArgument + " stringArgument: " + stringArgument);
+        
     }
 }
