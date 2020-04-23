@@ -3,7 +3,7 @@ package com.reactlibrary;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import java.lang.system.out;
+import com.facebook.react.bridge.ReadableMap;
 
 public class DocumentControllerModule extends ReactContextBaseJavaModule {
 
@@ -20,9 +20,7 @@ public class DocumentControllerModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void show(String[] args) {
-        println("react-native-document-controller not supported for android");
+    public void show(final ReadableMap args) {
         // TODO: Implement some actually useful functionality
-        
     }
 }
